@@ -1,0 +1,28 @@
+\documentclass[a4paper]{article}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\graphicspath{ {./images/} }
+
+\lstdefinestyle{codeStyle}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=none,
+% numbers=left,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  backgroundcolor=\color{gray!10!white},
+}
+\newcommand{\code}[1]{\colorbox{gray!20!white}{\lstinline|#1|}}
+\lstset{style=codeStyle}
+
+\begin{document}
+  \title{Title}
+  \author{Author}
+  \date{}
+  \maketitle
+\end{document}
